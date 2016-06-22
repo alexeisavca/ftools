@@ -9,11 +9,22 @@ This package is modular, there is no entry point, you import only the functions 
 in your project.
 
 ```js
-import add from "ftools/math/add";
+import add from "@alexeisavca/ftools/math/add";
 [1,2,3].reduce(add);//6
 ```
 
 ##Docs
-Check the source, are rarely longer than one line and are commented.
+### func
+Contains higher order functions
 
-* math - contains math related functions
+### math
+Contains math related functions
+
+#### add/2::(any, any) => any
+Adds its arguments using '+', doesn't typecheck, can add numbers as well as concat strings
+
+#### inc/1::any => any
+Incrementation
+
+#### dec/1::any => any
+Decrementation
