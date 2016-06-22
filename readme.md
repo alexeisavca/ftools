@@ -46,3 +46,9 @@ Incrementation
 
 #### dec::any => any
 Decrementation
+
+### strings
+String related functions
+
+#### capitalize::string => string
+Capitalizes the first character of a string

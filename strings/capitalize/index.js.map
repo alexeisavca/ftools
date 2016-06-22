@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.es6"],"names":[],"mappings":";;;;;;qBAAe,UAAA,MAAM;SAAI,MAAM,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,GAAG,MAAM,CAAC,KAAK,CAAC,CAAC,CAAC;CAAA","file":"index.js","sourcesContent":["export default string => string.charAt(0).toUpperCase() + string.slice(1);"]}
