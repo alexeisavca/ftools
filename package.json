@@ -1,0 +1,22 @@
+{
+  "name": "@alexeisavca/ftools",
+  "version": "0.1",
+  "description": "A collection of functional functions",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeisavca/ftools.git"
+  },
+  "keywords": [
+    "fp",
+    "functional"
+  ],
+  "author": "Alexei Savca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexeisavca/ftools/issues"
+  },
+  "homepage": "https://github.com/alexeisavca/ftools#readme"
+}
