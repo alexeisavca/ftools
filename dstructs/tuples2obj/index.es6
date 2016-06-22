@@ -1,0 +1,1 @@
+export default tuples => tuples.reduce((obj, [key, value]) => (obj[key] = value, obj), {});

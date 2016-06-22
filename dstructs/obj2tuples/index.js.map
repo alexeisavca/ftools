@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.es6"],"names":[],"mappings":";;;;;;qBAAe,UAAA,GAAG;SAAI,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,UAAA,GAAG;WAAI,CAAC,GAAG,EAAE,GAAG,CAAC,GAAG,CAAC,CAAC;GAAA,CAAC;CAAA","file":"index.js","sourcesContent":["export default obj => Object.keys(obj).map(key => [key, obj[key]]);"]}

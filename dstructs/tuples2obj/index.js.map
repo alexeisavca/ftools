@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.es6"],"names":[],"mappings":";;;;;;;;qBAAe,UAAA,MAAM;SAAI,MAAM,CAAC,MAAM,CAAC,UAAC,GAAG,EAAE,IAAY;+BAAZ,IAAY;;QAAX,GAAG;QAAE,KAAK;WAAO,GAAG,CAAC,GAAG,CAAC,GAAG,KAAK,EAAE,GAAG;GAAC,EAAE,EAAE,CAAC;CAAA","file":"index.js","sourcesContent":["export default tuples => tuples.reduce((obj, [key, value]) => (obj[key] = value, obj), {});"]}

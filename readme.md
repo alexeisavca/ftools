@@ -14,6 +14,25 @@ import add from "@alexeisavca/ftools/math/add";
 ```
 
 ##Docs
+### dstructs
+Contains functions related to transformations and parsing of data structures
+
+#### obj2tuples::object => [(any, any)]
+Converts an object to an array of [key, value] arrays aka tuples
+
+    obj2tuples({a: 1, b:2, c: 3})//[['a', 1], ['b', 2], ['c', 3']]
+
+#### tuples2obj::[(any, any)] => object
+Reverse of the above. Converts and array of (key, value) tuples to an object
+
+    tuples2obj([['a', 1], ['b', 2], ['c', 3']])//{a: 1, b:2, c: 3}
+
+#### withTuples::(object, [(any, any)] => [(any, any)]) => object
+Combination of the above. Converts and object to tuples and passes it to the callback, then converts the returned tuple
+array to an object
+
+    withTuples({a: 1, b: 2}, tuples => tuples.map(([key, value]) => [key + "prime", value + 1]))//{aprime: 2, bprime: 3}
+
 ### func
 Contains higher order functions
 
