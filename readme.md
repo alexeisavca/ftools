@@ -30,7 +30,7 @@ tuples2obj([['a', 1], ['b', 2], ['c', 3]])//{a: 1, b:2, c: 3}
 ```
 
 #### withTuples::(object, [(any, any)] => [(any, any)]) => object
-Combination of the above. Converts and object to tuples and passes it to the callback, then converts the returned tuple
+Combination of the above. Converts an object to tuples and passes it to the callback, then converts the returned tuple
 array to an object
 ```js
 withTuples({a: 1, b: 2}, tuples => tuples.map(([key, value]) => [key + "prime", value + 1]))//{aprime: 2, bprime: 3}
