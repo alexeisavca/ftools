@@ -19,50 +19,59 @@ Contains functions related to transformations and parsing of data structures
 
 #### obj2tuples::object => [(any, any)]
 Converts an object to an array of [key, value] arrays aka tuples
-
-    obj2tuples({a: 1, b:2, c: 3})//[['a', 1], ['b', 2], ['c', 3']]
+```js
+obj2tuples({a: 1, b:2, c: 3})//[['a', 1], ['b', 2], ['c', 3']]
+```
 
 #### tuples2obj::[(any, any)] => object
 Reverse of the above. Converts and array of (key, value) tuples to an object
-
-    tuples2obj([['a', 1], ['b', 2], ['c', 3']])//{a: 1, b:2, c: 3}
+```js
+tuples2obj([['a', 1], ['b', 2], ['c', 3']])//{a: 1, b:2, c: 3}
+```
 
 #### withTuples::(object, [(any, any)] => [(any, any)]) => object
 Combination of the above. Converts and object to tuples and passes it to the callback, then converts the returned tuple
 array to an object
-
-    withTuples({a: 1, b: 2}, tuples => tuples.map(([key, value]) => [key + "prime", value + 1]))//{aprime: 2, bprime: 3}
+```js
+withTuples({a: 1, b: 2}, tuples => tuples.map(([key, value]) => [key + "prime", value + 1]))//{aprime: 2, bprime: 3}
+```
 
 #### mapObjTuples::(object, (any, any) => (any, any)) => object
 Shorthand for the above
-
-    mapObjTuples({a: 1, b: 2}, ([key, value]) => [key + "prime", value + 1])//{aprime: 2, bprime: 3}
+```js
+mapObjTuples({a: 1, b: 2}, ([key, value]) => [key + "prime", value + 1])//{aprime: 2, bprime: 3}
+```
 
 #### mapObjValues::(object, any => any) => object
 Maps only the values of an object
-
-    mapObjValues({a: 1, b: 2}, inc)//{a: 2, b: 3}
+```js
+mapObjValues({a: 1, b: 2}, inc)//{a: 2, b: 3}
+```
 
 ### func
 Contains higher order functions
 
 #### pipe::(...args) => (...functions) => any
 Function composition and application
-
-    pipe(1, 2, 3)(a, b, c)
+```js
+pipe(1, 2, 3)(a, b, c)
+```
 
 is the same as
-
-    c(b(a(1, 2, 3)))
+```js
+c(b(a(1, 2, 3)))
+```
 
 #### compose::(...functions) => (...args) => any
 Function composition and application
-
-    pipe(a, b, c)(1, 2, 3)
+```js
+pipe(a, b, c)(1, 2, 3)
+```
 
 is the same as
-
-    a(b(c(1, 2, 3);
+```js
+a(b(c(1, 2, 3);
+```
 
 ### math
 Contains math related functions
