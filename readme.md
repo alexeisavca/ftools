@@ -26,7 +26,7 @@ obj2tuples({a: 1, b:2, c: 3})//[['a', 1], ['b', 2], ['c', 3']]
 #### tuples2obj::[(any, any)] => object
 Reverse of the above. Converts and array of (key, value) tuples to an object
 ```js
-tuples2obj([['a', 1], ['b', 2], ['c', 3']])//{a: 1, b:2, c: 3}
+tuples2obj([['a', 1], ['b', 2], ['c', 3]])//{a: 1, b:2, c: 3}
 ```
 
 #### withTuples::(object, [(any, any)] => [(any, any)]) => object
