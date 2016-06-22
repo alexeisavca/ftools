@@ -16,4 +16,4 @@ import add from "ftools/math/add";
 ##Docs
 Check the source, are rarely longer than one line and are commented.
 
-*math - contains math related functions
+* math - contains math related functions
