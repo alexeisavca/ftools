@@ -17,14 +17,32 @@ import add from "@alexeisavca/ftools/math/add";
 ### func
 Contains higher order functions
 
+#### pipe::(...args) => (...functions) => any
+Function composition and application
+
+    pipe(1, 2, 3)(a, b, c)
+
+is the same as
+
+    c(b(a(1, 2, 3)))
+
+#### compose::(...functions) => (...args) => any
+Function composition and application
+
+    pipe(a, b, c)(1, 2, 3)
+
+is the same as
+
+    a(b(c(1, 2, 3);
+
 ### math
 Contains math related functions
 
-#### add/2::(any, any) => any
+#### add::(any, any) => any
 Adds its arguments using '+', doesn't typecheck, can add numbers as well as concat strings
 
-#### inc/1::any => any
+#### inc::any => any
 Incrementation
 
-#### dec/1::any => any
+#### dec::any => any
 Decrementation

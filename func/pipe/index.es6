@@ -1,0 +1,1 @@
+export default (...args) => (f, ...fs) => fs.reduce((arg, f) => f(arg), f(...args));

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.es6"],"names":[],"mappings":";;;;;;qBAAe;oCAAI,IAAI;AAAJ,QAAI;;;SAAK,UAAC,CAAC;uCAAK,EAAE;AAAF,QAAE;;;WAAK,EAAE,CAAC,MAAM,CAAC,UAAC,GAAG,EAAE,CAAC;aAAK,CAAC,CAAC,GAAG,CAAC;KAAA,EAAE,CAAC,kBAAI,IAAI,CAAC,CAAC;GAAA;CAAA","file":"index.js","sourcesContent":["export default (...args) => (f, ...fs) => fs.reduce((arg, f) => f(arg), f(...args));"]}
