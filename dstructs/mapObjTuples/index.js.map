@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.es6"],"names":[],"mappings":";;;;;;;;0BAAuB,eAAe;;;;qBAEvB,UAAC,GAAG,EAAE,EAAE;SAAK,6BAAW,GAAG,EAAE,UAAA,MAAM;WAAI,MAAM,CAAC,GAAG,CAAC,EAAE,CAAC;GAAA,CAAC;CAAA","file":"index.js","sourcesContent":["import withTuples from \"../withTuples\";\r\n\r\nexport default (obj, cb) => withTuples(obj, tuples => tuples.map(cb));\r\n"]}

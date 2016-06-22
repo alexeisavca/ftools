@@ -33,6 +33,16 @@ array to an object
 
     withTuples({a: 1, b: 2}, tuples => tuples.map(([key, value]) => [key + "prime", value + 1]))//{aprime: 2, bprime: 3}
 
+#### mapObjTuples::(object, (any, any) => (any, any)) => object
+Shorthand for the above
+
+    mapObjTuples({a: 1, b: 2}, ([key, value]) => [key + "prime", value + 1])//{aprime: 2, bprime: 3}
+
+#### mapObjValues::(object, any => any) => object
+Maps only the values of an object
+
+    mapObjValues({a: 1, b: 2}, inc)//{a: 2, b: 3}
+
 ### func
 Contains higher order functions
 
