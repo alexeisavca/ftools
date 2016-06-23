@@ -65,7 +65,7 @@ c(b(a(1, 2, 3)))
 #### compose::(...functions) => (...args) => any
 Function composition and application
 ```js
-pipe(a, b, c)(1, 2, 3)
+compose(a, b, c)(1, 2, 3)
 ```
 
 is the same as
